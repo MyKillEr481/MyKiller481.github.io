@@ -1,10 +1,10 @@
-install gnome terminal with code:-` $ sudo apt install gnome-terminal
-run update command:-```
+install gnome terminal with code:-``` $ sudo apt install gnome-terminal
+```run update command:-```
 ``` 
 $ sudo apt-get update
 ```
 set up Docker's apt repository
-Adding Docker's official GPG key:-``` $ sudo apt-get install ca-certificates curl
+Adding Docker's official GPG key:-```$ sudo apt-get install ca-certificates curl```
 						
 						$ sudo install -m 0755 -d /etc/apt/keyrings
 						
@@ -23,22 +23,22 @@ $ echo \
 								sudo tee /etc/apt/sources.list.d/docker/list > /dev/null
 								$ sudo apt-get update
 ```
-Installing Docker packages:-`$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+Installing Docker packages:-```$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin```
 
 
-Verify installation was successful with code:- `$ sudo docker run hello-world
+Verify installation was successful with code:- ```$ sudo docker run hello-world```
 If installed correctly should have an output with "Hello from Docker"
 
 using https://wpengine.com/resources/containers-clusters-wordpress/
 
 Define the project
-use command:- `mkdir new_wordpress/
+use command:- `mkdir new_wordpress/`
 move to the directory using:- `cd new_wordpress/`
 
 Create docker file for YAML
-use command to create a text file:-`touch docker-compose.yml
-use command to edit file:-`nano docker-compose.yml
-add specified text:- `version: '3.3'  
+use command to create a text file:-`touch docker-compose.yml`
+use command to edit file:-`nano docker-compose.yml`
+add specified text:- `version: '3.3'  `
 ```
 ```services:  
    db:  
@@ -69,12 +69,12 @@ volumes:
 ```
 
 Build the project
-run command:-` sudo docker-compose up -d
+run command:-` sudo docker-compose up -d`
 wait for download to complete
 
 error handling
 add user to docker group:- `sudo usermod -aG $(whoami)`
-restart session:- `newgrp docker
+restart session:- `newgrp docker`
 verify user is in docker group:- `groups`
 check docker container status:- `docker ps`
 
