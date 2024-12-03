@@ -82,3 +82,5 @@ accessing wordpress site
 in browser enter the url:- http://localhost:8000
 fill in the website name, username, password and email. 
 log in and access the admin interface
+![Screenshot 2024-12-03 114048](https://github.com/user-attachments/assets/ffeab5d4-e628-4788-a0d7-6e83caaecd51)
+you should see this screen before accessing the admin interface
