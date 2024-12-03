@@ -1,3 +1,3 @@
 # SysAdminProjects
-[[Installing docker]] [[Archlinux install]] [[Cloud Wireguard]]
-[a relative link](Installing docker.md)
+[Installing Docker](Installing docker.md)
+[CLoud Wireguard](Cloud Wireguard.md)
