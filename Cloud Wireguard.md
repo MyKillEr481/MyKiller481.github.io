@@ -5,13 +5,13 @@ choose either SSH key or a password
 
 SSH into droplet
 install docker and docker compose
-refer to [[Installing docker]]
+refer to [Installing docker](Installing docker.md)
 
 
 setup wireguard
-run these commands:-`mkdir -p ~/wireguard/
-mkdir -p ~/wireguard/config/
-nano ~/wireguard/docker-compose.yml`
+run these commands:-`mkdir -p ~/wireguard/`
+`mkdir -p ~/wireguard/config/`
+`nano ~/wireguard/docker-compose.yml`
 ```copy and paste the following:-
 version: '3.8'
 services:
