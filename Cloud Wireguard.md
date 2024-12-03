@@ -12,8 +12,8 @@ setup wireguard
 run these commands:-`mkdir -p ~/wireguard/`
 `mkdir -p ~/wireguard/config/`
 `nano ~/wireguard/docker-compose.yml`
-```copy and paste the following:-
-version: '3.8'
+copy and paste the following:-
+```version: '3.8'
 services:
   wireguard:
     container_name: wireguard
@@ -40,8 +40,9 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
-    
 ```
+    
+
 modify the following
 TZ is timezone so change it to yours.
 SERVERURL must be changed to the one on your DigitalOcean dashboard.
