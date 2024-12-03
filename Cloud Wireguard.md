@@ -10,10 +10,10 @@ refer to [[Installing docker]]
 
 setup wireguard
 run these commands:-`mkdir -p ~/wireguard/
-`mkdir -p ~/wireguard/config/`
-`nano ~/wireguard/docker-compose.yml`
-copy and paste the following:- ```
-```version: '3.8'
+mkdir -p ~/wireguard/config/
+nano ~/wireguard/docker-compose.yml`
+```copy and paste the following:-
+version: '3.8'
 services:
   wireguard:
     container_name: wireguard
@@ -41,21 +41,18 @@ services:
       - NET_ADMIN
       - SYS_MODULE
     
-````
+```
 modify the following
 TZ is timezone so change it to yours.
 SERVERURL must be changed to the one on your DigitalOcean dashboard.
 enter CTRL + X, Y, ENTER to save and exit.
 start wireguard:- `cd ~/wireguard/
-`docker-compose up -d
+docker-compose up -d`
 connect to phone:- `docker-compose logs -f wireguard`
 open wireguard app on phone, click on +, create from QR code and scan QR code.
 enter a tunnel name
 
 install wireguard app onto PC
 locate config files:- `~/wireguard/configs/{username}`
-
-error handling
-make directory:- `mkdir -p ~/wireguard/configs/pc1`
-create configuration file:- `touch ~/wireguard/configs/pc1.conf`
+in wireguard app, select new tunnel and paste the config file from previous step.
 
