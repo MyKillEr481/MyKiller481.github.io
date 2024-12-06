@@ -52,8 +52,19 @@ docker-compose up -d`
 connect to phone:- `docker-compose logs -f wireguard`
 open wireguard app on phone, click on +, create from QR code and scan QR code.
 enter a tunnel name
+before turning on your VPN you should check what your IP is
+before turning it on you should see something like this
+![Screenshot_20241126_142526_Samsung Internet](https://github.com/user-attachments/assets/a01a3acd-484c-4d05-a020-3ce3f2c14597)
+after turning on the VPN you should see that your IP has changed to something like this
+![Screenshot_20241126_142625_Samsung Internet](https://github.com/user-attachments/assets/96518e6c-f941-4232-85df-22ccd035d8b2)
+
 
 install wireguard app onto PC
 locate config files:- `~/wireguard/configs/{username}`
 in wireguard app, select new tunnel and paste the config file from previous step.
+before turning on your VPN you should check what your IP is
+before turning it on you should see something like this
+![Screenshot 2024-11-25 232841](https://github.com/user-attachments/assets/42e17f57-7d56-48be-8f63-604c4f2653c7)
+after turning on the VPN you should see that your IP has changed to something like this
+![Screenshot 2024-12-02 165423](https://github.com/user-attachments/assets/c5b46dce-ea07-4b8b-a8b4-5e401e55bd54)
 
