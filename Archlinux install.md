@@ -80,6 +80,18 @@ enable network manager:- `systemctl enable NetworkManager`
 finally reboot:- `reboot`
 afterwards you will eventually be presented with a login screen, login with the user and password you created.
 
+after logging in open up shell and create aliases
+open up `~/.bashrc` with `nano ~/.bashrc`
+go to the end of the file
+add your aliases
+e.g. `alias h="history"` or `alias c="clear"`
+follow the above format.
+
+Error handling
+1. make sure to remember the mode you booted into. If you boot into BIOS remember to do everything in terms of BIOS. If you try using UEFI commands in BIOS it won't work and vice versa.
+2. when installing a network manager use `pacstrap` instead of `pacman`
+3. take a snapshot before installing LXQt desktop as my install didn't want to install and I had to install them from the beginning again.
+
 
 
 
